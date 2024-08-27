@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Reactive_programming
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb  # In-memory H2 database
+    username: sa
+    password:
+
+  datasource:
+    url: jdbc:h2:mem:testdb  # JDBC URL for H2 console
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+
+  h2:
+    console:
+      enabled: true  # Enable H2 console
+      path: /h2-console  # Console path
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically update the schema for JPA
+    show-sql: true
